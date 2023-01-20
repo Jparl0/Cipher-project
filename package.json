@@ -1,0 +1,12 @@
+{
+    "name": "Cipher-encrypter",
+    "description": "description here",
+    "engines": {
+      "node": "16.x"
+    },
+    "scripts": {
+      "build": "npm install --prefix client && npm run build --prefix client",
+      "clean": "rm -rf public",
+      "deploy": "cp -a client/build/. public/",
+    }
+  }
